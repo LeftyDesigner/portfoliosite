@@ -1,0 +1,113 @@
+{% set bodyClass="work" %}
+
+{% extends "../layouts/base_with_nav.twig" %}
+{% block main %}
+
+<div class="headerwrap">
+	<header>
+		<h1>SCALGO Website Redesign</h1>
+		<h2>Web Design / Front-end Development<br/>
+			<a href="http://scalgo.com" target="_blank">scalgo.com</a>
+		</h2>
+	</header>
+</div>
+
+<div class="projectwrap">
+	<section>
+		<div class="desc">
+			<h3>Project date: Fall 2015</h3>
+			<p>
+				Since the Danish company SCALGO was founded in 2009, their focus has shifted from creating terrain data-processing software to promoting their interactive terrain-mapping tool, SCALGO Live. This change along with the company's growth called for a complete redesign of the original website I created in 2010. We started from scratch with all new copy, reorganized navigation structure and main call-to-action. I created a new visual brand using
+				<a href="http://styletil.es/" target="_blank">Samantha Warren's Style Tiles</a>, page layout and content hierarchy with wireframes, and built the site using
+				<a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap v.4</a>
+				including
+				<a href="http://sass-lang.com/" target="_blank">Sass</a>.
+			</p>
+		</div>
+
+		<div id="tabs">
+			<ul>
+				<li>
+					<a href="#desktop">Desktop</a>
+				</li>
+				<li>
+					<a href="#mobile">Mobile</a>
+				</li>
+				<li>
+					<a href="#wire">Wireframes</a>
+				</li>
+			</ul>
+			<div class="desktop" id="desktop">
+				<div class="example">
+					<img src="images/work/scalgo-home.jpg" alt="SCALGO Homepage"/>
+					<h3>Homepage</h3>
+					<p>
+						Using a screen capture video from the SCALGO Live interface as the featured visual draws the user's attention to the main call-to-action, to learn more about SCALGO Live Flood Risk. I chose Aspira for a custom font because of its friendly, yet professional appeal, and use orange selectively for direct calls to action and the main navigation.
+					</p>
+				</div>
+				<div class="example">
+					<img src="images/work/scalgo-flood-risk.jpg" alt="SCALGO Live Flood Risk Page"/>
+					<h3>SCALGO Live Flood Risk</h3>
+					<p>
+						The main purpose of this page is to educate the user on their Flood Risk product. Although SCALGO is an international company and most of the site is in English, the company is currently targeting the Danish market for Flood Risk, so this page is in Danish.
+					</p>
+				</div>
+				<div class="example">
+					<img src="images/work/scalgo-contact.jpg" alt="SCALGO Contact Page"/>
+					<h3>Contact Page</h3>
+					<p>
+						SCALGO encourages their customers to contact them directly, so the address and phone number is in the footer for access at all times, but I also highlighted their location and number up front on the Contact page. Some of the pages incorporate customized icons for an added visual element, and the Contact page features a section on how to schedule a Flood Risk demo, including staff photos for a personal feel.
+					</p>
+				</div>
+			</div>
+
+
+			<div id="mobile">
+				<div class="mobile">
+					<div class="example">
+						<img src="images/work/scalgo-home-mob.jpg" alt="SCALGO Homepage Mobile View"/>
+						<p>Using the Bootstrap navbar, the menu collapses into a button to save space on smaller screens. The gradient underneath the copy switches to vertical to show the map image above the text.</p>
+					</div>
+					<div class="example">
+						<img src="images/work/scalgo-menu-mob.jpg" alt="SCALGO Menu Mobile View"/>
+						<p>The mobile menu expands vertically with large touch areas to allow for finger vs. mouse navigation.</p>
+					</div>
+					<div class="example">
+						<img src="images/work/scalgo-flood-risk-mob.jpg" alt="SCALGO Live Flood Risk Page Mobile View"/>
+						<p>The SCALGO Live Flood Risk page uses custom icons to help relay the information followed with a large call-to-action area to keep the user from hitting a "dead end."</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="wire" class="wire">
+				<div class="example">
+					<img src="images/work/scalgo-home-wire.png" alt="SCALGO Homepage Wireframe"/>
+					<p>
+						The homepage wireframe created with
+						<a href="http://www.justinmind.com/" target="_blank">Justinmind</a>
+						wireframing software. Wireframing helps me organize the content and create an information heirarchy before bringing in the visual design.
+					</p>
+				</div>
+				<div class="example">
+					<img src="images/work/scalgo-floodrisk-wire.png" alt="SCALGO Life Flood Risk Wireframe"/>
+					<p>
+						The organization of the SCALGO Live Flood Risk page was very important as there was a lot of information to convey, and viewing this page is the main call to action of the site. In the early stage of content development I put in my own headlines in English to be translated later.
+					</p>
+				</div>
+				<!--<div class="example">
+				                    <img src="images/work/scalgo-mob-wire.png" alt="SCALGO Mobile Wireframe" />
+				                    <p>
+				                    This mobile layout of the SCALGO Live Flood Risk page shows how the information adjusts to a smaller screen layout.
+				                    </p>
+				                </div>-->
+			</div>
+
+		</div>
+
+
+		<a href="#" class="top">Back to Top</a>
+	</section>
+</div>
+
+{% endblock %}

@@ -1,0 +1,103 @@
+{% set bodyClass="work" %}
+
+{% extends "../layouts/base_with_nav.twig" %}
+{% block main %}
+
+<div class="headerwrap">
+	<header>
+    	<h1>LGFCU Website Redesign</h1>
+        <h2>UI Design / Project Management / Front-end Development</h2>
+<h2><a href="https://www.lgfcu.org/" target="_blank">lgfcu.org</a></h2>
+    </header>
+</div>
+
+<div class="projectwrap">
+    <section>
+        <div class="desc">
+            <h3>Project date: 2013-2014</h3>
+            <p>
+            I planned out and managed the entire redesign of LGFCU's 200+ page website, which averages over 260,000 users and one million sessions a month. I oversaw the mapping out of our content strategy, front-end design with our freelance web designer, <a href="http://flyingdogcreative.com/project/local-government-federal-credit-union/" target="_blank">Matt Pusateri</a>, and implementation of the site into Drupal. I also designed the interface layout, built <a href="lgfcu-wireframes/" target="_blank">responsive wireframes</a> and managed two rounds of user testing. The site's goal is to be a financial advice hub for credit union members that is accessible on any device.
+            </p>
+            
+            <p>This project won a <a href="http://macnetwork.org/?page=awards" target="_blank">2015 Marketing Association of Credit Unions (MAC) Gold Award</a> for Website Redesign.
+        </div>
+        
+        <div id="tabs">
+            <ul>
+                <li><a href="#desktop">Desktop</a></li>
+                <li><a href="#mobile">Mobile</a></li>
+                <li><a href="#wire">Wireframes</a></li>
+            </ul>
+            <div class="desktop" id="desktop">
+                <div class="example">
+                	<img src="images/work/lgfcu-home.jpg" alt="LGFCU Homepage" />
+                    <h3>Homepage</h3>
+                    <p>
+                    We wanted the user to have easy access to log into online banking (Member Connect) on the homepage, but also draw their attention to our main call-to-action banner ad, which is why the login was placed on the far right. The color blue is used very specifically for items inviting interaction, and the custom font Tisa is used for a friendly, but professional feel in the headers and ads.
+                    </p>
+                </div>
+                <div class="example">
+                    <img src="images/work/lgfcu-product.jpg" alt="LGFCU Product Page" />
+                    <h3>Product Page</h3>
+                    <p>
+                    Most interior pages feature a three-column layout incorporating a subnavigation menu at the top right along with related documents, financial calculators and rates, if applicable. The Member Connect login is available as a drop down from the header on every page, but doesn't distract from the main page content.
+                    </p>
+                </div>
+                <div class="example">
+                    <img src="images/work/lgfcu-aim.jpg" alt="LGFCU Aim Blog Page" />
+                    <h3>Aim Blog</h3>
+                    <p>
+                    LGFCU's member magazine is called "Aim," and the launch of the new website debuted a blog component to Aim featuring useful financial tips and advice. Custom icons identify the article's topic category, and dynamically-generated site links, using taxonomy, display in the sidebar to let the user know if there are related products, services or news items.
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div id="mobile">
+                <div class="mobile">
+                    <div class="example">
+                        	<img src="images/work/lgfcu-home-mob.jpg" alt="LGFCU Homepage Mobile View" />
+                        <p>The homepage header features direct links to the Rates page and Contact Center, which opens the user's phone app. Every page on the site has header buttons for Member Connect (online banking) and a link to find branch locations.</p>
+                    </div>
+                    <div class="example">
+                        <img src="images/work/lgfcu-menu-mob.jpg" alt="LGFCU Menu Mobile View" />
+                        <p>The mobile menu works just like the desktop view with a vertical accordian and uses large, touch-friendly select areas along with color indications of the navigation level.</p>
+                    </div>
+                    <div class="example">
+                        <img src="images/work/lgfcu-product-mob.jpg" alt="LGFCU Product Page Mobile View" />
+                        <p>Internal pages feature subnav menus for faster access to sibling pages while keeping the main links for mobile users, Member Connect online banking and finding a branch, accessible at all times.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div id="wire" class="wire">
+                <div class="example">
+                    <img src="images/work/lgfcu-home-wire.jpg" alt="LGFCU Homepage Wireframe" />
+                    <p>
+                    One of my initial wireframe sketches for the homepage layout underneath the main header and navigation in mobile and desktop widths.
+                    </p>
+                </div>
+                <div class="example">
+                    <img src="images/work/lgfcu-home-wire2.png" alt="LGFCU Homepage Wireframe" />
+                    <p>
+                    Refined digital wireframe using <a href="http://www.justinmind.com/" target="_blank">Justinmind</a> wireframing software. At this time the content is getting closer to the final layout.
+                    </p>
+                </div>
+                <div class="example">
+                    <img src="images/work/lgfcu-home-wire3.png" alt="LGFCU Homepage Wireframe" />
+                    <p>
+                    The finalized homepage content and layout displayed in <a href="lgfcu-wireframes/" target="_blank">responsive wireframes</a>, built using the <a href="http://foundation.zurb.com/" target="_blank">Zurb Foundation</a> framework. These wireframes were used as a reference for building the content types in Drupal and constructing the accordion navigation, as well as the first round of user testing.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+               
+        
+        
+
+    <a href="#" class="top">Back to Top</a>
+    </section>
+</div>
+{% endblock %}

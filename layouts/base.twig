@@ -1,0 +1,102 @@
+{#
+ # The base layout template
+ # ------------------------
+ #
+ # This template defines the base HTML structure for our site: the DTD, the
+ # `<html>`, `<head>`, `<title>`, and `<body>` tags, plus some `<meta>` tags and
+ # a `<link rel="stylesheet">` tag that includes our main CSS file.
+ #
+ # This template also defines 3 `block` regions, which child templates are free to
+ # override:
+ #
+ #   * `head`: This block wraps the entire default contents of our `<head>` tag.
+ #             If a child template wishes to add more to the head, they can do so
+ #             like this:
+ #
+ #                 {% block head %}
+ #                     {{ parent() }}
+ #                     <!-- additional stuff -->
+ #                 {% endblock %}
+ #
+ #             Calling `{{ parent() }}` will output the contents of the `head`
+ #             block that are already defined in this template.
+ #
+ #   * `body`: This block is placed directly after the opening `<body>` tag.
+ #             Child templates can use this to define the main body contents.
+ #
+ #   * `foot`: This block is placed directly before the closing `</body>` tag.
+ #             Child templates can use this to include Javascript files, etc.
+-#}
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+	<head>
+		{% block head %}
+			<meta name="viewport" content="width=device-width"/>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+			<title>
+				{% if title is defined %}
+					{{ title }}
+					-
+				{% endif %}
+				SCALGO</title>
+
+			<title>{{title|default('Shannon M&oslash;lhave / UX, Web Design and Front-end Development')}}</title>
+
+			<META name="keywords" content="shannon mølhave, shannon moelhave, shannon renee moelhave, shannon r moelhave, shannon glutting, shannon renee glutting, shannon r glutting, ux, ux design, user experience, user experience design, web design, website design, Web site design, aarhus, dk, denmark, århus, html, css">
+			<meta name="description" content={{description|default("American UX designer based in Aarhus, Denmark with a background in web design and front-end development.")}} )>
+			<meta name="distribution" content="Global">
+			<meta name="copyright" content="Copyright 2020 Shannon Mølhave">
+			<meta name="author" content="Shannon Mølhave">
+			<meta name="robots" content="All">
+			<meta name="rating" content="General">
+			<meta name="google-site-verification" content="ZTy1r8UVU-KQGEmncMIBnDxiIXZdKR1EHf7cypOYimc"/>
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+			{# jquery ui css for tabs manually positiioned in the _tabs.scss file #}
+			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+			<script src="js/dragend.js"></script>
+			
+			{# TMKILL <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/> #}
+
+		{% endblock %}
+	</head>
+	<body class="{{bodyClass|default('')}}"> {% block body %}{% endblock %}
+		{% block foot %}
+			<script>
+				(function (i, s, o, g, r, a, m) {
+i['GoogleAnalyticsObject'] = r;
+i[r] = i[r] || function () {
+(i[r].q = i[r].q || []).push(arguments)
+},
+i[r].l = 1 * new Date();
+a = s.createElement(o),
+m = s.getElementsByTagName(o)[0];
+a.async = 1;
+a.src = g;
+m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-4736880-5', 'auto');
+ga('send', 'pageview');
+			</script>
+
+			<script>
+				$("#tabs").tabs(); // initialize tabs
+$(function () {
+$("#tabs").tabs({
+activate: function (event, ui) {
+var scrollTop = $(window).scrollTop(); // save current scroll position
+window.location.hash = ui.newPanel.attr('id'); // add hash to url
+$(window).scrollTop(scrollTop); // keep scroll at current position
+}
+});
+});
+			</script>
+
+		{% endblock %}
+	</body>
+</html>

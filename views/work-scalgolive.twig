@@ -1,0 +1,63 @@
+{% set bodyClass="work" %}
+
+{% extends "../layouts/base_with_nav.twig" %}
+{% block main %}
+
+<div class="headerwrap">
+	<header>
+    	<h1>SCALGO Live Interface</h1>
+        <h2>UI Design<br />
+<a href="http://scalgo.com/live" target="_blank">scalgo.com/live</a></h2>
+    </header>
+</div>
+
+<div class="projectwrap">
+    <section>
+        <div class="desc">
+            <h3>Project date: Fall 2013</h3>
+            <p>
+            Danish company <a href="http://scalgo.com/" target="_blank">SCALGO (Scalable Algorithmics)</a> commissioned me to design this robust online application using similar visuals as their print and <a href="work-scalgosite.html">online</a> brands I created. SCALGO Live gives customers access to real-time terrain data and advanced analysis products for use in assessing and monitoring flood risk. Users can simulate flooding scenarios involving natural or man-made terrain changes, and combine these estimations with weather forecasting data to create early warning predictions.
+            </p>
+        </div>
+        
+        <div id="tabs">
+            <ul>
+                <li><a href="#desktop">Desktop</a></li>
+                <li><a href="#wire">Wireframe</a></li>
+            </ul>
+            <div class="desktop" id="desktop">
+                <div class="example">
+                	<img src="images/work/scalgolive.jpg" alt="SCALGO Live" />
+                    <h3>Base Map</h3>
+                    <p>
+                    The interface uses SCALGO's brand colors along with custom icons for their various application tools. The menu can close to the left allowing a full-width display, and the map view options at the top are always accessible. This screen shows the flow accumulation network based on a global terrain model.
+                    </p>
+                </div>
+                <div class="example">
+                    <img src="images/work/scalgolive-download.jpg" alt="SCALGO Live Download tool" />
+                    <h3>Download Tool</h3>
+                    <p>
+                    Showing the view when logged in of one of the tool submenus for downloading the map data. Users can select a square or custom polygon shape and select from a wide array of file types.
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div id="wire" class="wire">
+                <div class="example">
+                    <img src="images/work/scalgolive-wire.jpg" alt="SCALGO Live Wireframe" />
+                    <p>
+                    Initial sketch of the interface layout along with notes on user interactions.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+               
+        
+        
+
+    <a href="#" class="top">Back to Top</a>
+    </section>
+</div>
+{% endblock %}

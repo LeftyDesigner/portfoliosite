@@ -1,0 +1,92 @@
+{% set bodyClass="work" %}
+
+{% extends "../layouts/base_with_nav.twig" %}
+{% block main %}
+
+<div class="headerwrap">
+	<header>
+    	<h1>Footnotes Tap Ensemble Website</h1>
+        <h2>Web Design / Front-end Development</h2>
+<h2><a href="http://www.footnotestapensemble.org/" target="_blank">footnotestapensemble.org</a></h2>
+    </header>
+</div>
+
+<div class="projectwrap">
+    <section>
+        <div class="desc">
+            <h3>Project date: Spring 2012</h3>
+            <p>
+            For Footnotes' 10th anniversary I designed and built a fully responsive site to allow for easy viewing on any current device, and future-friendly for devices yet to be deployed. I also built the site using mobile-first methods so smaller screens with bandwidth limitations wouldn't need to download as many images and scripts. After building I installed the <a href="https://grabaperch.com/" target="_blank">Perch CMS</a> for easy maintenance.
+            </p>
+        </div>
+        
+        <div id="tabs">
+            <ul>
+                <li><a href="#desktop">Desktop</a></li>
+                <li><a href="#mobile">Mobile</a></li>
+                <li><a href="#wire">Wireframe</a></li>
+            </ul>
+            <div class="desktop" id="desktop">
+                <div class="example">
+                	<img src="images/work/footnotes-home.jpg" alt="Footnotes Homepage" />
+                    <h3>Homepage</h3>
+                    <p>
+                    Featuring a responsive image slideshow of actual Footnotes performances and custom photography, the homepage's main call-to-action is to see the group's next event.
+                    </p>
+                </div>
+                <div class="example">
+                    <img src="images/work/footnotes-events.jpg" alt="Footnotes Upcoming Events Page" />
+                    <h3>Upcoming Events</h3>
+                    <p>
+                    Light blue is intentionally used as an indicator of website links with orange as an accent showing where the user is in the navigation. The decorative sidebar image on interior pages is built in as a CSS background, which doesn't load in the mobile view to save bandwidth.
+                    </p>
+                </div>
+                <div class="example">
+                    <img src="images/work/footnotes-photos.jpg" alt="Footnotes Photos Page" />
+                    <h3>Show Photos</h3>
+                    <p>
+                    The photo galleries feature CSS-generated "ribbons" for the show titles and responsive image thumbnails and sliders.
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div id="mobile">
+                <div class="mobile">
+                    <div class="example">
+                        	<img src="images/work/footnotes-home-mob.jpg" alt="Footnotes Homepage Mobile View" />
+                        <p>The mobile view of the homepage reorganizes the content to show the upcoming event link closer to the top, creates a toggled menu opened at the top-right and uses a random PHP image loader rather than the larger image slideshow.</p>
+                    </div>
+                    <div class="example">
+                        <img src="images/work/footnotes-events-mob.jpg" alt="Footnotes Upcoming Events Mobile View" />
+                        <p>Scrolling down in the mobile view you can see a breadcrumb trail appears in lieu of the visible subnav in the desktop view. The "Next event" link takes the user directly down to the event details.</p>
+                    </div>
+                    <div class="example">
+                        <img src="images/work/footnotes-photos-mob.jpg" alt="Footnotes Photo Gallery Mobile View" />
+                        <p>The toggled main menu uses the same HTML build as the desktop view, but styled with CSS for mobile use, and slides up and down with jQuery.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div id="wire" class="wire">
+                <div class="example">
+                    <img src="images/work/footnotes-wire.jpg" alt="Footnotes Wireframe" />
+                    <p>
+                    Sketch of the content organization for the Upcoming Events page in wide and narrow views.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+               
+        
+        
+
+    <a href="#" class="top">Back to Top</a>
+    </section>
+    
+
+</div>
+
+{% endblock %}

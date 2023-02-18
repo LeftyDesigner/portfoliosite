@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Credit Union Business - LGFCU</title>
+
+  
+  <link rel="stylesheet" href="css/foundation.css">
+  
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/wireframes.js"></script>
+
+</head>
+<body class="int reports">
+	<?php include 'header.php'?>
+
+ 
+	<div class="row panel">
+		<div class="small-6 large-4 left column">
+			<article>
+				<h2>Credit Union Business</h2>
+				
+				<h4>Financial Reports</h4>
+				<p>
+				Intro copy bacon ipsum dolor sit amet tongue sausage pancetta salami filet mignon chicken kielbasa andouille flank hamburger boudin corned beef strip steak. Short loin salami pastrami jowl pork belly tenderloin ribeye rump sirloin beef venison frankfurter pork chop.
+				</p>
+
+				<h5>2013 Monthly Reports</h5>
+				<div class="small-2 large-2 left">
+					<ul class="disc">
+						<li><a href="#">January</a></li>
+						<li><a href="#">February</a></li>
+						<li><a href="#">March</a></li>
+						<li><a href="#">April</a></li>
+					</ul>
+				</div>
+				<div class="small-2 large-2 column">
+					<ul class="disc">
+						<li><a href="#">May</a></li>
+						<li><a href="#">June</a></li>
+						<li><a href="#">July</a></li>
+						<li><a href="#">August</a></li>
+					</ul>
+				</div>
+				<div class="small-2 large-2 left">
+					<ul class="disc">
+						<li><a href="#">September</a></li>
+						<li><a href="#">October</a></li>
+						<li><a href="#">November</a></li>
+						<li><em>December</em></li>
+					</ul>
+				</div>
+				
+				<h5><a href="#">2012 Annual Report</a></h5>
+				<h5><a href="#">2012 Audit Report</a></h5>
+				<br>
+			</article>
+			
+			<h4>Annual Meeting</h4>
+			<p>
+Each year LGFCU holds its annual meeting in April. Members are encouraged to attend, ask questions and provide feedback to the board and management during the open format meeting.
+</p>
+
+<h4>Voting and membership</h4>
+			<p>
+During the Annual Meeting members vote to place other members on the Board of Directors.
+</p>
+
+<h4>Stability and security for all your financial matters</h4>
+			<p>
+We put member needs first. Over the years we have stayed the course amid a whirlwind of changes in society, to the economy and among financial institutions, all to fulfill our original purpose of improving members’ lives. We remain committed to helping our members prosper by offering affordable, safe and comprehensive financial services through good times and bad. That’s something that will never change.
+The Credit Union undergoes both internal and external audits as well as relies on the Supervisory Committee, Board of Directors and Credit Union Management and staff to practice fiscally responsible yada, yada, yada.
+</p>
+			
+			
+			
+		</div>
+		
+		<div class="small-6 large-2 left column text-center sidebar">
+			<img class="bot-padding" src="http://placehold.it/360x222&amp;text=Testimonial/AM video">
+			<p class="smtxt">
+				Video caption
+			</p>
+			
+			<div class="sidewrap text-left">
+				<h3>Report archives</h3>
+
+				<div class="row">
+					<div class="large-6 small-6">
+						<p>
+						<a href="#">2011 Annual Report</a><br>
+						
+						<a href="#">2010 Annual Report</a></p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="large-6 small-6 text-left">
+						<h5>2012 Monthly Reports</h5>
+						<div class="small-3 large-3 column col-right">
+							<ul class="disc smtxt">
+								<li><a href="#">January</a></li>
+								<li><a href="#">February</a></li>
+								<li><a href="#">March</a></li>
+								<li><a href="#">April</a></li>
+								<li><a href="#">May</a></li>
+								<li><a href="#">June</a></li>
+							</ul>
+						</div>
+						<div class="small-3 large-3 column col-left">
+							<ul class="disc smtxt">
+								<li><a href="#">July</a></li>
+								<li><a href="#">August</a></li>
+								<li><a href="#">September</a></li>
+								<li><a href="#">October</a></li>
+								<li><a href="#">November</a></li>
+								<li><a href="#">December</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+		</div>
+		
+	
+
+	<div class="ctawrap">
+		<div class="row panel">
+			<div class="small-6 large-2 left column segment">
+				<h4>Related Links</h4>
+				<ul class="disc">
+					<li><a href="#">Board of Directors</a></li>
+					<li><a href="#">Supervisory Committee</a></li>
+					<li><a href="#">Credit Union Management</a></li>
+				</ul>
+			</div>
+			<div class="small-6 large-2 left column text-center">
+			<img src="http://placehold.it/360x180&amp;text=LGFCU adspace">
+			</div>
+		</div>
+	</div>	
+		
+	</div>
+	
+	
+
+	<?php include 'footer.php'?>
+	
+</body>
+</html>

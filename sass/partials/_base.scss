@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* SCSS Document */
+
+//TM KILL
+//@import "compass"; 
+
+html {
+	box-sizing: border-box;
+	font-size: 100%; /* 16px = 1em */
+	line-height:1.3125em; /* 24px */
+	font-family:$sans-serif;
+	min-width:320px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	width:100%;
+}
+
+a {
+	&:link, &:visited {
+		color:$link;
+		font-weight:normal;
+		text-decoration:none;
+	}
+	&:hover, &:focus {
+		text-decoration:underline;
+	}
+}
+
+button {
+	border:none;
+	padding:0;
+	background:none;
+	outline:none;
+}
+

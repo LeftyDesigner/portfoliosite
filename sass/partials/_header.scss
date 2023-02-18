@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* SCSS Document */
+
+.headerwrap {
+	width:100%;
+	padding: $wrappading-mobile;
+	background:url(../images/bkgd1.gif) top left repeat;
+	position:relative;
+	
+	@include smtablet {
+		padding: $wrappading-tab;
+	}
+}
+
+header {
+	font-family:'livingston', $serif;
+	position:relative;
+}
+
+/* HOMEPAGE */
+
+.home {
+	.headerwrap {
+		z-index:-10;
+		header {
+			max-width:$homewidth;
+			margin:0 auto;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+      		-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			justify-content: center;
+			align-items: stretch;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			z-index:-5;
+			h1 {
+				font-family:'livingstonbold', $serif;
+			}
+			h2 {
+				font-size:24px;
+				line-height:normal;
+				.bold {
+					font-family:'livingstonbold', $serif;
+				}
+			}
+			p {
+				margin-bottom:0;
+			}
+			@include smtablet {
+				h1 {
+					font-size: 52px;
+					line-height:0.96666667em; /* 58px */
+				}
+				h2 {
+					font-size:1.625em; /* 26px */
+				}
+			}
+			@include desktop {
+				h1 {
+					font-size: 3.75em; /* 60px */
+					line-height:0.96666667em; /* 58px */
+				}
+			}
+		}
+	}
+}
+
+
+/* WORK PROJECT PAGES */
+
+.work {
+	header {
+		max-width:$workwidth;
+		margin:0 auto;
+		h1 {
+			font-size:2.375em; /* 38px */
+			line-height:1.15789474em; /* 44px */
+			margin-bottom:0.26315789em; /* 10px */
+		}
+		h2 {
+			font-size:1.375em; /* 22px */
+			line-height:1.45454545em; /* 32px */
+		}
+		a {
+			&:hover, &:focus {
+				text-decoration: none;
+				color:#000;
+				outline:none;
+			}
+		}
+	}
+}
+

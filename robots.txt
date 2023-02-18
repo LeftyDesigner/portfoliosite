@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /lgfcu-wireframes/
+Disallow: /sass/
+Disallow: /projects/

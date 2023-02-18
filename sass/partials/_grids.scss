@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* SCSS Document */
+
+.content-wrap {
+	width:100%;
+}
+
+.one-col {
+	position:relative;
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	-webkit-flex-basis: 50%;
+	flex-basis: 50%;
+	width:50%;
+	@include tablet {
+		-webkit-flex-basis: 23%;
+		flex-basis: 23%;
+	}
+}
+
+.two-col {
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	flex-basis: 100%;
+	width:100%;
+	@include tablet {
+		-webkit-flex-basis: 50%;
+		flex-basis: 50%;
+		width:50%;
+	}
+}
+
+.three-col {
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	flex-basis: 100%;
+	width:100%;
+	@include tablet {
+		-webkit-flex-basis: 75%;
+		flex-basis: 75%;
+		width:75%;
+	}
+}
+
+.full-width {
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	flex-basis: 100%;
+	width:100%;
+}
+

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* SCSS Document */
+
+/*$break-small: 420px;
+$break-med: 850px;
+$break-large: 1200px;*/
+
+$smtablet-width: 550px;
+$tablet-width: 940px;
+$desktop-width: 1140px;
+
+
+@mixin smtablet {
+  @media (min-width: #{$smtablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
