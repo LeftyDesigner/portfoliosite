@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const fs = require('fs');
 const devMode = process.env.NODE_ENV !== 'production';
+const CopyPlugin = require("copy-webpack-plugin");
 
 function generateHtmlPlugins (templateDir, subDir) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir))
@@ -30,7 +31,7 @@ module.exports = {
         test: /\.twig$/,
         use: [
           'raw-loader',
-          'twig-html-loader'
+          'twig-html-loader',    
         ]
       },
       {
@@ -48,7 +49,7 @@ module.exports = {
           }
         }]
     },
-    { test: /\.svg$/, use: ['file-loader'] },
+     { test: /\.svg$/, use: ['file-loader'] },
     { test: /\.gif$/, use: ['file-loader'] },
     { test: /\.woff2$/, use: ['file-loader'] },
     { test: /\.woff$/, use: ['file-loader'] },
@@ -59,7 +60,13 @@ module.exports = {
     ]
   },
   plugins: [
-      new MiniCssExtractPlugin()
+      new MiniCssExtractPlugin(),
+      new CopyPlugin({
+        patterns: [
+          { from: "images", to: "images" },          
+          { from: "js", to: "js" }
+        ],
+      }),
     ]
     .concat(generateHtmlPlugins('./views','.'))
     .concat(generateHtmlPlugins('./views/lgfcu-wireframes','lgfcu-wireframes')),
