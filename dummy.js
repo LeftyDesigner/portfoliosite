@@ -1,3 +1,3 @@
-import './sass/screen.scss'
+import './sass/main.scss'
 
 console.log("Dummy for webpack.");

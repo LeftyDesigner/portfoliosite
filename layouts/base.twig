@@ -47,21 +47,16 @@
 			<META name="keywords" content="shannon mølhave, shannon moelhave, shannon renee moelhave, shannon r moelhave, shannon glutting, shannon renee glutting, shannon r glutting, ux, ux design, user experience, user experience design, web design, website design, Web site design, aarhus, dk, denmark, århus, html, css">
 			<meta name="description" content={{description|default("American UX designer based in Aarhus, Denmark with a background in web design and front-end development.")}} )>
 			<meta name="distribution" content="Global">
-			<meta name="copyright" content="Copyright 2020 Shannon Mølhave">
+			<meta name="copyright" content="Copyright {{ "now"|date("Y") }} Shannon Mølhave">
 			<meta name="author" content="Shannon Mølhave">
 			<meta name="robots" content="All">
 			<meta name="rating" content="General">
 			<meta name="google-site-verification" content="ZTy1r8UVU-KQGEmncMIBnDxiIXZdKR1EHf7cypOYimc"/>
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+			<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-			{# jquery ui css for tabs manually positiioned in the _tabs.scss file #}
-			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
-			<script src="js/dragend.js"></script>
-			
-			{# TMKILL <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/> #}
-
+			<script src="js/dragend.js"></script>			
 		{% endblock %}
 	</head>
 	<body class="{{bodyClass|default('')}}"> {% block body %}{% endblock %}
