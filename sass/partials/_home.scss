@@ -124,28 +124,35 @@
 			button {
 				width: 0; 
 				height: 0;
-				&.right { 
-					display:block;
-					border-top: 17px solid transparent; 
-					border-left: 34px solid $link; 
-					border-bottom: 17px solid transparent;
-					&:hover {
-						border-left: 34px solid #000; 
-					}
+				&::before {
+					border-style: solid;
+					border-width: 0.25em 0.25em 0 0;
+					border-color: $link; 
+					content: '';
+					display: inline-block;
+					height: 0.75em;
+					left: 0.15em;
+					position: relative;
+					top: 0.15em;
+					transform: rotate(-45deg);
+					vertical-align: top;
+					width: 0.75em;
 				}
-				&.left { 
-					display:none;
-					border-top: 17px solid transparent; 
-					border-right: 34px solid $link; 
-					border-bottom: 17px solid transparent;
-					margin-right:10px;
-					&:hover {
-						border-right: 34px solid #000; 
-					}
+				&.right:before { 
+					left: -1em;
+					transform: rotate(45deg);
+				}
+				&.left:before {
+					//display: none;
+					left: -2em;
+					transform: rotate(-135deg);
 				}
 				float:right;
 				&:hover {
 					cursor:pointer;
+				}
+				&:hover:before {
+					border-color: #000; 
 				}
 			}
 		}
@@ -180,6 +187,9 @@
 				text-decoration:none;
 				background:#000;
 			}
+		}
+		p:last-child {
+			margin-bottom: 0;
 		}
 	}
 	@include smtablet {
@@ -223,13 +233,12 @@
 			position:relative;
 		}
 		a {
-			background:$link;
 			opacity: .95;
 			display:block;
 			position:absolute;
 			padding:0;
 			bottom:0;
-			height:60%;
+			height:100%;
 			left:0;
 			width:100%;
 			border-left:solid 1px #fff;
@@ -239,21 +248,26 @@
 				font-size:1em; /* 16px */
 				line-height:normal;
 			}
-			&:hover, &:focus {
-				color:#fff;
-				text-decoration:none;
-				background:#000;
-			}
 			.linkwrap {
+				position: relative;
 				display:block;
-				margin:10px;
+				height: 50%;
+				top: 50%;
+				margin:0;
+				padding: 20px;
+				background:$link;
+				&:hover, &:focus {
+					color:#fff;
+					text-decoration:none;
+					background:#000;
+				}
 				.skill {
 					display:none;
 				}
 			}
 			@include smtablet {
 				.linkwrap {
-					margin:20px;
+					margin:0;
 					.skill {
 						font-family:$sans-serif;
 						font-weight: normal;
@@ -265,12 +279,16 @@
 				}
 			}
 			@include tablet {
-				height: 40%;
+				height: 100%;
 				&:link, &:visited {
 					font-size:1.125em; /* 18px */
 				}
-				.skill {
-					font-size:0.72222222em; /* 13px */
+				.linkwrap {
+					height: 40%;
+					top: 60%;
+					.skill {
+						font-size:0.72222222em; /* 13px */
+					}
 				}
 			}
 		}
